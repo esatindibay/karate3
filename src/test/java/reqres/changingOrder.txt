@@ -1,0 +1,55 @@
+{
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+        },
+        {
+                     "id": 12,
+                     "email": "rachel.howell@reqres.in",
+                     "first_name": "Rachel",
+                     "last_name": "Howell",
+                     "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"
+                 }
+    ],
+    "ad": {
+        "company": "StatusCode Weekly",
+        "url": "http://statuscode.org/",
+        "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
+    }
+}
+
+IN THIS JSON EXAMPLE: YOU CAN CHANGE "PAGE": "2", AND "PER_PAGE": 6, AND THE CHANGING ORDER DOES NOT AFFECT
+YOUR TEST BECAUSE THESE ARE MAIL FIELDS
+
+BUT!!
+IF YOU CHANGE
+  {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+        },
+
+        JSON OBJECT TO
+
+           {
+                    "id": 12,
+                    "email": "rachel.howell@reqres.in",
+                    "first_name": "Rachel",
+                    "last_name": "Howell",
+                    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"
+                }
+
+                THIS TIME YOU WILL GET ERROR BECAUSE ARRAY GETS CONFUSED, INDEXES CHANGED.
+
+
+esati
